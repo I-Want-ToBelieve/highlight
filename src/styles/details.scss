@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+#root {
+  margin: 0 15%;
+}
+
+#title {
+  font-size: 80px;
+  text-align: center;
+}
+
+#picture {
+  text-align: center;
+  margin-bottom: 60px;
+
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+#introduce {
+  text-align: center;
+  font-size: 16px;
+  margin: 0 10%;
+}

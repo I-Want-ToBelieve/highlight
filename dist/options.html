@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>options</title>
+  </head>
+  <body class="bg-color">
+    <header class="bg-color"><h2>Dexter Extension</h2></header>
+
+    <nav class="wrapper">
+      <ul class="tabs">
+        <li class="active">Colors</li>
+        <li>Dictionary</li>
+      </ul>
+
+      <ul class="tab__content">
+        <li class="active">
+          <div class="content__wrapper">
+            <h2 class="text-color">Pick a color for keywords</h2>
+
+            <ul class="colors">
+              <li data-color="#2ecc71" data-color-name="green"></li>
+              <li data-color="#D64A4B" data-color-name="red"></li>
+              <li data-color="#8e44ad" data-color-name="purple"></li>
+              <li data-color="#46a1de" data-color-name="blue"></li>
+              <li data-color="#9ed33c" data-color-name="greenyellow"></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="content__wrapper">
+            <h2 class="text-color">Management of the dictionary</h2>
+            <button id="update-dictionary" class="fill">
+              Update Dictionary
+            </button>
+            <button id="add-keywords" class="fill">Add Keywords</button>
+            <div class="table__container">
+              <table id="keywords-table">
+                <thead>
+                  <tr>
+                    <th><h1>Expression</h1></th>
+                    <th><h1>Type</h1></th>
+                    <th><h1>Action</h1></th>
+                    <th><h1>Description</h1></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <script src="js/options.js"></script>
+  </body>
+</html>

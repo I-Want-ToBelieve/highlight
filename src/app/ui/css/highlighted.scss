@@ -1,0 +1,62 @@
+$ease: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+.dexter-highlighted {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    transition: width 400ms $ease;
+  }
+  &:before {
+    width: 100%;
+  }
+  &:after {
+    width: 0;
+  }
+  &:hover:after {
+    width: calc(100% + 1px);
+  }
+
+  &.red:before {
+    background-color: lighten(#d64a4b, 20%);
+  }
+  &.red:after {
+    background-color: #d64a4b;
+  }
+
+  &.green:before {
+    background-color: lighten(#2ecc71, 20%);
+  }
+  &.green:after {
+    background-color: #2ecc71;
+  }
+
+  &.greenyellow:before {
+    background-color: lighten(#9ed33c, 20%);
+  }
+  &.greenyellow:after {
+    background-color: #9ed33c;
+  }
+
+  &.purple:before {
+    background-color: lighten(#8e44ad, 20%);
+  }
+  &.purple:after {
+    background-color: #8e44ad;
+  }
+
+  &.blue:before {
+    background-color: lighten(#46a1de, 20%);
+  }
+  &.blue:after {
+    background-color: #46a1de;
+  }
+}
